@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+      }
+
+      header {
+        background: url(pizzaali.jpg.jpg);
+        width: 90%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 50% 80%;
+        background-position: bottom right;
+        position: relative;
+      }
+
+      nav {
+        width: 100%;
+        height: 70px;
+        padding: 0px 70px;
+        background: rgb(69, 130, 209);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 5px 5px 10px gray;
+      }
+
+      .logo {
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: rgb(210, 23, 23);
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: black;
+        font-size: medium;
+        padding: 10px 20px;
+      }
+
+      .menu a:last-child {
+        background: rgb(165, 42, 42);
+        color: azure;
+        border-radius: 8px;
+      }
+
+      .h-text {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        padding: 5px;
+      }
+
+      .h-text p {
+        color: black;
+        letter-spacing: 3px;
+        font-weight: bold;
+      }
+
+      .h-text h1 {
+        font-size: 3em;
+        line-height: 1em;
+      }
+
+      .h-text h1 span {
+        color: brown;
+      }
+
+      .h-text h2 {
+        font-size: 4em;
+        margin-bottom: 0.1em;
+      }
+
+      .menu a:hover {
+        color: rgb(243, 243, 249);
+        background-color: rgb(231, 6, 6);
+        border-radius: 10px;
+      }
+
+      #order {
+        text-decoration: none;
+        color: azure;
+        background-color: brown;
+        border-radius: 8px;
+        padding: 3px 15px;
+      }
+
+      #dis {
+        text-decoration: none;
+        color: azure;
+        background-color: rgb(109, 122, 123);
+        border-radius: 8px;
+        padding: 3px 15px;
+      }
+
+      #pizzaimage {
+        margin-top: 50%;
+        bottom: 0%;
+        left: 0%;
+        align-items: center;
+        size: 5ex;
+      }
+
+      #pizzaimage img {
+        transition: 0.4s ease;
+      }
+
+      #pizzaimage img:hover {
+        transform: translateY(10px);
+      }
+
+      .search {
+        float: left;
+        color: rgb(211, 160, 19);
+
+        height: 100%;
+      }
+
+      .n input {
+        border-radius: 10px;
+        color: rgb(241, 15, 3);
+      }
+
+      .login a {
+        margin-left: 10px;
+        white-space: 5px;
+        background: rgb(252, 3, 3);
+        text-decoration: none;
+        box-shadow: #fff;
+        border-radius: 5px;
+        color: rgb(249, 249, 249);
+        font-family: sans-serif;
+        font-size: medium;
+      }
+      footer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(245, 10, 10);
+  margin-bottom: 10px;
+
+}
+footer .content .middle a{
+  line-height: 30px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="n">
+        <div class="logo"><span>Pizza</span>Point</div>
+        <div class="menu">
+          <a href="PIZZA WEBSITE.html">Home</a>
+          <a href="#">Foods</a>
+          <a href="#">Offer's</a>
+          <a href="#">Your Order</a>
+          <a href="#">Delivery</a>
+          <a href="#">Cart</a>
+
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type here to search..."
+            />
+          </div>
+        </div>
+        <label>
+          <div class="login">
+            <a href="loginnew.html">Login</a>
+            <a href="ragister.html">Register</a>
+          </div>
+        </label>
+      </nav>
+      <div class="h-text">
+        <p>Free Home Delivery</p>
+        <h1>Quality f<span>oo</span>ds</h1>
+        <h2>Pizza of the Week</h2>
+        <a href="#" id="order"> Order now!!</a>
+
+        <a href="#" id="dis">25% Off Hurry!!</a>
+    </header>
+      <footer>
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>At Pizza Point, we don’t just make pizza.
+           We make people happy. Pizza point
+          was built on the belief that pizza night should be special
+          , and we carry that belief into everything we do. With more than 
+          55 years of experience under our belts, we understand how to best
+           serve our customers through tried and true.There’s nothing cookie-cutter about Pizza Point. Not our pizzas. Not our people. 
+            And definitely not the way we live life. Around here, we don’t settle for anything
+             less than food we’re proud to serve. And we don’t just clock in. Not when we can also
+             become our best, make friends, and have fun while we’re at it.
+          </p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+          <div>
+            <p>
+              Shop No.- A814, Block- 48, BH- 2, Lovely Professional University, Jalanadhar, Punjub,14441
+            </p>
+          </div>
+           <a href="#"><i class="fas fa-phone-volume"></i>+91-8252620527</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>aliasad07518@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="#">Home Delivery</a></div>
+       <div><a href="#">Dinning Delivery</a></div>
+       <div>
+        </p>
+<div class="topic">Close and Open Timming!</div>
+<div>
+  <p>Mon &amp; Tue CLOSED</p>
+<p>Wednesday 10.00 - 24.00</p>
+<p>Thursday 10:00 - 24:00</p>
+<p>Friday 10:00 - 12:00</p>
+<p>Saturday 10:00 - 23:00</p>
+<p>Sunday Closed</p>
+</div>
+
+       </div>
+     </div>
+       </form>
+     </div>
+   </div>
+      </footer>
+  </body>
+</html>
